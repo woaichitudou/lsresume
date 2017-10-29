@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刘思的简历</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <script src="./jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="init">代码是通过githubpages托管加载可能稍慢 &nbsp;&nbsp;&nbsp;稍等片刻...</div>
+    <div class="mask">
+        <p>此简历用jquery制作
+            <br> 记得全屏观看哦！！
+        </p>
+        <div class="btn">点我开始阅览</div>
+    </div>
+    <div class="resume">
+        <div class="title">
+            <div class="title-box">
+                个人简历
+            </div>
+        </div>
+        <div class="resume-left">
+            <div class="resume-left-top">
+                <i class="iconfont">&#xe62f;</i>
+            </div>
+            <div class="resume-left-box">
+                个人信息
+            </div>
+            <div class="resume-left-xinxi">
+                <ul>
+                    <li class="html1"></li>
+                    <li class="html2"></li>
+                </ul>
+                <ul>
+                    <li class="html3"></li>
+                    <li class="html4"></li>
+                </ul>
+                <li class="html5"></li>
+                <li class="html6"></li>
+                <li class="html7"></li>
+                <li class="html8"></li>
+            </div>
+            <div class="resume-left-box">
+                个人技能
+            </div>
+            <div class="resume-left-xinxi  gao">
+                <p class="html9"></p>
+                <p class="html10"></p>
+                <p class="html11"></p>
+                <p class="html12"></p>
+                <p class="html13"></p>
+                <p class="html14"></p>
+                <p class="html15"></p>
+
+            </div>
+            <div class="resume-left-box">
+                兴趣爱好
+            </div>
+            <div class="resume-left-xinxi">
+                <p class="html16"></p>
+                <p class="html17"></p>
+            </div>
+        </div>
+        <div class="resume-right">
+            <div class="fenge">
+                <div class="resume-right-title">
+                    <span></span>
+                    <h3>工作经历</h3>
+                    <span></span>
+                </div>
+                <div class="company-title">
+                    <h3 class="html18"></h3>
+                    <h4 class="html19"></h4>
+                    <h5 class="html20"></h5>
+                </div>
+                <p class="html21"></p>
+                <p class="html22"></p>
+                <p class="html23"></p>
+                <p class="html24"></p>
+                <p class="html25"></p>
+                <p class="html26"></p>
+                <div class="company-title">
+                    <h3 class="html27"></h3>
+                    <h4 class="html28"></h4>
+                    <h5 class="html29"></h5>
+                </div>
+                <p class="html30"></p>
+                <p class="html31"></p>
+                <p class="html32"></p>
+                <p class="html33"></p>
+                <p class="html34"></p>
+                <div class="company-title">
+                    <h3 class="html35"></h3>
+                    <h4 class="html36"></h4>
+                    <h5 class="html37"></h5>
+                </div>
+                <p class="html38"></p>
+                <p class="html39"></p>
+                <p class="html40"></p>
+            </div>
+            <div class="resume-right-title bor">
+                <span></span>
+                <h3>教育经历</h3>
+                <span></span>
+            </div>
+            <div class="company-title">
+                <h3 class="html41"></h3>
+                <h4 class="html42"></h4>
+                <h5 class="html43"></h5>
+            </div>
+            <div class="company-title">
+                <h3 class="html44"></h3>
+                <h4 class="html45"></h4>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    window.onload = function() {
+        $(".init").fadeOut(200);
+        var height = $(window).height();
+        $(".mask").height(height);
+        $(".btn").click(function() {
+            $(".mask").fadeOut(200);
+            begin()
+        });
+
+        function begin() {
+            var html1 = "\u59D3\u540D: \u5218\u601D";
+            var html2 = "\u6027\u522B: \u7537";
+            var html3 = "\u5B66\u5386: \u5728\u8BFB\u672C\u79D1";
+            var html4 = "\u7C4D\u8D2F:\u6E56\u5317";
+            var html5 = "\u7535\u8BDD:13071225846";
+            var html6 = "\u51FA\u751F\u65E5\u671F: 1994.07.04";
+            var html7 = "\u90AE\u7BB1:524926126@qq.com";
+            var html8 = "QQ:524926126";
+            var html9 = "\u7CBE\u901Ahtml html5 css css3 javascript jquery bootstrap ionic amazeui";
+            var html10 = "\u7CBE\u901A\u54CD\u5E94\u5F0F\u5E03\u5C40\uFF08\u4E2A\u4EBA\u79FB\u52A8\u7AEF\u4E1A\u52A1\u505A\u5F97\u6BD4\u8F83\u591A\u5305\u62EC\u5FAE\u4FE1\uFF09";
+            var html11 = "\u719F\u6089vue \u5168\u5BB6\u6876\uFF08\u6CA1\u5B9E\u9645\u9879\u76EE\uFF09\u82E5\u4E1A\u52A1\u9700\u6C42\u53EF\u73B0\u5B66\u73B0\u505A\u3002";
+            var html12 = "\u719F\u6089webpack\u6253\u5305\uFF0Ces6\u7F16\u8BD1\u3002\u63A5\u89E6\u8FC7node.js \u4F1A\u4F7F\u7528npm\u5305\u7BA1\u7406\u5DE5\u5177";
+            var html13 = "\u719F\u6089Git\uFF0C\u5177\u5907\u826F\u597D\u7684\u4EE3\u7801\u7F16\u7A0B\u4E60\u60EF\u53CA\u8F83\u5F3A\u7684\u6587\u6863\u7F16\u5199\u80FD\u529B\u3002";
+            var html14 = "\u4E86\u89E3\u5404\u79CD\u4E3B\u6D41\u6D4F\u89C8\u5668\u5BF9CSS\u548CJavaScript\u4E0D\u540C\u7279\u6027\u7684\u517C\u5BB9\u6027\uFF0C\u5E76\u6709\u76F8\u5173\u95EE\u9898\u89E3\u51B3\u7ECF\u9A8C";
+            var html15 = "\u505A\u4E8B\u79EF\u6781\u4E3B\u52A8\uFF0C\u8D23\u4EFB\u5FC3\u5F3A\uFF0C\u903B\u8F91\u6027\u5F3A\uFF0C\u4E50\u4E8E\u56E2\u961F\u5408\u4F5C\u3002\u8D85\u5F3A\u7684\u81EA\u6211\u9A71\u52A8\u529B";
+            var html16 = "\u8BFB\u4E66\uFF0C\u542C\u6B4C\uFF0C\u770B\u7535\u5F71\uFF0C\u65C5\u6E38\uFF0C\u7BEE\u7403";
+            var html17 = "没事喜欢在家研究代码";
+            var html18 = "\u6B66\u6C49\u65C5\u70E8\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8";
+            var html19 = "2016.01-2017.04";
+            var html20 = "\u9879\u76EE\u90E8Web\u524D\u7AEF";
+            var html21 = "1.\u8D1F\u8D23\u516C\u53F8\u7684\u4F01\u4E1ACMS\u7684\u540E\u53F0\u6A21\u677F\u7F16\u8F91\u5236\u4F5C";
+            var html22 = "2.\u8D1F\u8D23\u5236\u5B9A\u516C\u53F8\u5B98\u65B9\u7F51\u7AD9";
+            var html23 = "3.\u8D1F\u8D23\u516C\u53F8\u65B0\u5165\u5B66\u5458\u7684\u57F9\u8BAD\uFF0C\u6559\u6388html css css3 javascript jquery";
+            var html24 = "4.\u8D1F\u8D23\u516C\u53F8\u9762\u8BD5\u6D4B\u8BD5\u9898\u5FAE\u4FE1\u7AEF\u7684\u5236\u4F5C";
+            var html25 = "5.\u8D1F\u8D23\u516C\u53F8\u65B0\u5165\u5B66\u5458\u7684\u6280\u80FD\u8003\u6838";
+            var html26 = "6.\u534F\u52A9\u516C\u53F8\u7684\u62DB\u8058\u5DE5\u4F5C";
+            var html27 = "\u6B66\u6C49\u94ED\u7984\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8";
+            var html28 = "2017.04-2017.08";
+            var html29 = "\u6280\u672F\u90E8web\u524D\u7AEF";
+            var html30 = "1.\u534F\u52A9\u516C\u53F8\u7684\u5FAE\u4FE1\u516C\u4F17\u53F7\u5F00\u53D1";
+            var html31 = "2.\u4E09\u7EA7\u5206\u9500\u5FAE\u4FE1\u516C\u4F17\u53F7\u9875\u9762\u7F16\u5199\u53CA\u517C\u5BB9\u7684\u8C03\u6574";
+            var html32 = "3.\u6839\u636E\u5BA2\u6237\u8981\u6C42\u5B9E\u73B0\u4E09\u7EA7\u5206\u9500\u8981\u63A8\u5E7F\u7684\u9875\u9762\u7F16\u5199";
+            var html33 = "4.\u9B54\u672F\u5546\u57CE\u5FAE\u4FE1\u516C\u4F17\u53F7\u9875\u9762\u7F16\u5199\u4EE5\u53CA\u52A8\u753B\u517C\u5BB9\u7684\u8C03\u6574";
+            var html34 = "5.\u8C03\u8BD5\u7F16\u5199\u516C\u53F8\u5B98\u7F51";
+            var html35 = "\u6B66\u6C49\u65B0\u5B87\u7F51\u7EDC\u79D1\u6280\u6709\u9650\u516C\u53F8";
+            var html36 = "2017.08-\u81F3\u4ECA";
+            var html37 = "\u6280\u672F\u90E8web\u524D\u7AEF";
+            var html38 = "1.\u5FAE\u4FE1\u516C\u4F17\u53F7\u5F00\u53D1";
+            var html39 = "2.\u6DF7\u5408\u578Bapp\u9875\u9762\u5F00\u53D1\u3002(\u5305\u62EC\u52A8\u753B\uFF0C\u6570\u636E\u4EA4\u4E92)";
+            var html40 = "3.\u7F51\u7AD9\u5F00\u53D1\uFF0C\u9875\u9762\u7F16\u5199\uFF0C\u517C\u5BB9\u8C03\u8BD5";
+            var html41 = "\u6B66\u6C49\u79D1\u6280\u5927\u5B66";
+            var html42 = "2014.09-\u81F3\u4ECA";
+            var html43 = "\u7535\u5B50\u5546\u52A1";
+            var html44 = "\u6C49\u5DDD\u5B9E\u9A8C\u9AD8\u4E2D";
+            var html45 = "2011.09-2014.09";
+            var n = 0;
+            time1 = setInterval(function() {
+                n++;
+                if (n > html1.substring().length) {
+                    clearInterval(time1);
+                    n = 0;
+                    time2 = setInterval(function() {
+                        n++;
+                        if (n > html2.substring().length) {
+                            clearInterval(time2);
+                            n = 0;
+                            time3 = setInterval(function() {
+                                n++;
+                                if (n > html3.substring().length) {
+                                    clearInterval(time3);
+                                    n = 0;
+                                    time4 = setInterval(function() {
+                                        n++;
+                                        if (n > html4.substring().length) {
+                                            clearInterval(time4);
+                                            n = 0;
+                                            time5 = setInterval(function() {
+                                                n++;
+                                                if (n > html5.substring().length) {
+                                                    clearInterval(time5);
+                                                    n = 0;
+                                                    time6 = setInterval(function() {
+                                                        n++;
+                                                        if (n > html6.substring().length) {
+                                                            clearInterval(time6);
+                                                            n = 0;
+                                                            time7 = setInterval(function() {
+                                                                n++;
+                                                                if (n > html7.substring().length) {
+                                                                    clearInterval(time7);
+                                                                    n = 0;
+                                                                    time8 = setInterval(function() {
+                                                                        n++;
+                                                                        if (n > html8.substring().length) {
+                                                                            clearInterval(time8);
+                                                                            n = 0;
+                                                                            time9 = setInterval(function() {
+                                                                                n++;
+                                                                                if (n > html9.substring().length) {
+                                                                                    clearInterval(time9);
+                                                                                    n = 0;
+                                                                                    time10 = setInterval(function() {
+                                                                                        n++;
+                                                                                        if (n > html10.substring().length) {
+                                                                                            clearInterval(time10);
+                                                                                            n = 0;
+                                                                                            time11 = setInterval(function() {
+                                                                                                n++;
+                                                                                                if (n > html11.substring().length) {
+                                                                                                    clearInterval(time11);
+                                                                                                    n = 0;
+                                                                                                    time12 = setInterval(function() {
+                                                                                                        n++;
+                                                                                                        if (n > html12.substring().length) {
+                                                                                                            clearInterval(time12);
+                                                                                                            n = 0;
+                                                                                                            time13 = setInterval(function() {
+                                                                                                                n++;
+                                                                                                                if (n > html13.substring().length) {
+                                                                                                                    clearInterval(time13);
+                                                                                                                    n = 0;
+                                                                                                                    time14 = setInterval(function() {
+                                                                                                                        n++;
+                                                                                                                        if (n > html14.substring().length) {
+                                                                                                                            clearInterval(time14);
+                                                                                                                            n = 0;
+                                                                                                                            time15 = setInterval(function() {
+                                                                                                                                n++;
+                                                                                                                                if (n > html15.substring().length) {
+                                                                                                                                    clearInterval(time15);
+                                                                                                                                    n = 0;
+                                                                                                                                    time16 = setInterval(function() {
+                                                                                                                                        n++;
+                                                                                                                                        if (n > html16.substring().length) {
+                                                                                                                                            clearInterval(time16);
+                                                                                                                                            n = 0;
+                                                                                                                                            time17 = setInterval(function() {
+                                                                                                                                                n++;
+                                                                                                                                                if (n > html17.substring().length) {
+                                                                                                                                                    clearInterval(time17);
+                                                                                                                                                    n = 0;
+                                                                                                                                                    time18 = setInterval(function() {
+                                                                                                                                                        n++;
+                                                                                                                                                        if (n > html18.substring().length) {
+                                                                                                                                                            clearInterval(time18);
+                                                                                                                                                            n = 0;
+                                                                                                                                                            time19 = setInterval(function() {
+                                                                                                                                                                n++;
+                                                                                                                                                                if (n > html19.substring().length) {
+                                                                                                                                                                    clearInterval(time19);
+                                                                                                                                                                    n = 0;
+                                                                                                                                                                    time20 = setInterval(function() {
+                                                                                                                                                                        n++;
+                                                                                                                                                                        if (n > html20.substring().length) {
+                                                                                                                                                                            clearInterval(time20);
+                                                                                                                                                                            n = 0;
+                                                                                                                                                                            time21 = setInterval(function() {
+                                                                                                                                                                                n++;
+                                                                                                                                                                                if (n > html21.substring().length) {
+                                                                                                                                                                                    clearInterval(time21);
+                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                    time22 = setInterval(function() {
+                                                                                                                                                                                        n++;
+                                                                                                                                                                                        if (n > html22.substring().length) {
+                                                                                                                                                                                            clearInterval(time22);
+                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                            time23 = setInterval(function() {
+                                                                                                                                                                                                n++;
+                                                                                                                                                                                                if (n > html23.substring().length) {
+                                                                                                                                                                                                    clearInterval(time23);
+                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                    time24 = setInterval(function() {
+                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                        if (n > html24.substring().length) {
+                                                                                                                                                                                                            clearInterval(time24);
+                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                            time25 = setInterval(function() {
+                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                if (n > html25.substring().length) {
+                                                                                                                                                                                                                    clearInterval(time25);
+                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                    time26 = setInterval(function() {
+                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                        if (n > html26.substring().length) {
+                                                                                                                                                                                                                            clearInterval(time26);
+                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                            time27 = setInterval(function() {
+                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                if (n > html27.substring().length) {
+                                                                                                                                                                                                                                    clearInterval(time27);
+                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                    time28 = setInterval(function() {
+                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                        if (n > html28.substring().length) {
+                                                                                                                                                                                                                                            clearInterval(time28);
+                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                            time29 = setInterval(function() {
+                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                if (n > html29.substring().length) {
+                                                                                                                                                                                                                                                    clearInterval(time29);
+                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                    time30 = setInterval(function() {
+                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                        if (n > html30.substring().length) {
+                                                                                                                                                                                                                                                            clearInterval(time30);
+                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                            time31 = setInterval(function() {
+                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                if (n > html31.substring().length) {
+                                                                                                                                                                                                                                                                    clearInterval(time31);
+                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                    time32 = setInterval(function() {
+                                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                                        if (n > html32.substring().length) {
+                                                                                                                                                                                                                                                                            clearInterval(time32);
+                                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                                            time33 = setInterval(function() {
+                                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                                if (n > html33.substring().length) {
+                                                                                                                                                                                                                                                                                    clearInterval(time33);
+                                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                                    time34 = setInterval(function() {
+                                                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                                                        if (n > html34.substring().length) {
+                                                                                                                                                                                                                                                                                            clearInterval(time34);
+                                                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                                                            time35 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                                                if (n > html35.substring().length) {
+                                                                                                                                                                                                                                                                                                    clearInterval(time35);
+                                                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                                                    time36 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                                                                        if (n > html36.substring().length) {
+                                                                                                                                                                                                                                                                                                            clearInterval(time36);
+                                                                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                                                                            time37 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                                                                if (n > html37.substring().length) {
+                                                                                                                                                                                                                                                                                                                    clearInterval(time37);
+                                                                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                                                                    time38 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                                                                                        if (n > html38.substring().length) {
+                                                                                                                                                                                                                                                                                                                            clearInterval(time38);
+                                                                                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                                                                                            time39 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                                                                                if (n > html39.substring().length) {
+                                                                                                                                                                                                                                                                                                                                    clearInterval(time39);
+                                                                                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                                                                                    time40 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                                                                                                        if (n > html40.substring().length) {
+                                                                                                                                                                                                                                                                                                                                            clearInterval(time40);
+                                                                                                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                                                                                                            time41 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                                                                                                if (n > html41.substring().length) {
+                                                                                                                                                                                                                                                                                                                                                    clearInterval(time41);
+                                                                                                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                                                                                                    time42 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                                                                                                                        if (n > html42.substring().length) {
+                                                                                                                                                                                                                                                                                                                                                            clearInterval(time42);
+                                                                                                                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                                                                                                                            time43 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                                                                                                                if (n > html43.substring().length) {
+                                                                                                                                                                                                                                                                                                                                                                    clearInterval(time43);
+                                                                                                                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                                                                                                                    time44 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                                                                        n++;
+                                                                                                                                                                                                                                                                                                                                                                        if (n > html44.substring().length) {
+                                                                                                                                                                                                                                                                                                                                                                            clearInterval(time44);
+                                                                                                                                                                                                                                                                                                                                                                            n = 0;
+                                                                                                                                                                                                                                                                                                                                                                            time45 = setInterval(function() {
+                                                                                                                                                                                                                                                                                                                                                                                n++;
+                                                                                                                                                                                                                                                                                                                                                                                if (n > html45.substring().length) {
+                                                                                                                                                                                                                                                                                                                                                                                    clearInterval(time45);
+                                                                                                                                                                                                                                                                                                                                                                                    n = 0;
+                                                                                                                                                                                                                                                                                                                                                                                    show()
+                                                                                                                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                                                                                                                    $(".html45").html(html45.substring(0, n))
+                                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                                                                                                                            $(".html44").html(html44.substring(0, n))
+                                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                                                                                                    $(".html43").html(html43.substring(0, n))
+                                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                                                                                                            $(".html42").html(html42.substring(0, n))
+                                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                                                                                    $(".html41").html(html41.substring(0, n))
+                                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                                                                                            $(".html40").html(html40.substring(0, n))
+                                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                                                                    $(".html39").html(html39.substring(0, n))
+                                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                                                                            $(".html38").html(html38.substring(0, n))
+                                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                                                    $(".html37").html(html37.substring(0, n))
+                                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                                                            $(".html36").html(html36.substring(0, n))
+                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                                    $(".html35").html(html35.substring(0, n))
+                                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                                            $(".html34").html(html34.substring(0, n))
+                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                    $(".html33").html(html33.substring(0, n))
+                                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                                            $(".html32").html(html32.substring(0, n))
+                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                    $(".html31").html(html31.substring(0, n))
+                                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                                            $(".html30").html(html30.substring(0, n))
+                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                    $(".html29").html(html29.substring(0, n))
+                                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                                            $(".html28").html(html28.substring(0, n))
+                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                    $(".html27").html(html27.substring(0, n))
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                                            $(".html26").html(html26.substring(0, n))
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                    $(".html25").html(html25.substring(0, n))
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                                        } else {
+                                                                                                                                                                                                            $(".html24").html(html24.substring(0, n))
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                                } else {
+                                                                                                                                                                                                    $(".html23").html(html23.substring(0, n))
+                                                                                                                                                                                                }
+                                                                                                                                                                                            }, 100)
+                                                                                                                                                                                        } else {
+                                                                                                                                                                                            $(".html22").html(html22.substring(0, n))
+                                                                                                                                                                                        }
+                                                                                                                                                                                    }, 100)
+                                                                                                                                                                                } else {
+                                                                                                                                                                                    $(".html21").html(html21.substring(0, n))
+                                                                                                                                                                                }
+                                                                                                                                                                            }, 100)
+                                                                                                                                                                        } else {
+                                                                                                                                                                            $(".html20").html(html20.substring(0, n))
+                                                                                                                                                                        }
+                                                                                                                                                                    }, 100)
+                                                                                                                                                                } else {
+                                                                                                                                                                    $(".html19").html(html19.substring(0, n))
+                                                                                                                                                                }
+                                                                                                                                                            }, 100)
+                                                                                                                                                        } else {
+                                                                                                                                                            $(".html18").html(html18.substring(0, n))
+                                                                                                                                                        }
+                                                                                                                                                    }, 100)
+                                                                                                                                                } else {
+                                                                                                                                                    $(".html17").html(html17.substring(0, n))
+                                                                                                                                                }
+                                                                                                                                            }, 100)
+                                                                                                                                        } else {
+                                                                                                                                            $(".html16").html(html16.substring(0, n))
+                                                                                                                                        }
+                                                                                                                                    }, 100)
+                                                                                                                                } else {
+                                                                                                                                    $(".html15").html(html15.substring(0, n))
+                                                                                                                                }
+                                                                                                                            }, 100)
+                                                                                                                        } else {
+                                                                                                                            $(".html14").html(html14.substring(0, n))
+                                                                                                                        }
+                                                                                                                    }, 100)
+                                                                                                                } else {
+                                                                                                                    $(".html13").html(html13.substring(0, n))
+                                                                                                                }
+                                                                                                            }, 100)
+                                                                                                        } else {
+                                                                                                            $(".html12").html(html12.substring(0, n))
+                                                                                                        }
+                                                                                                    }, 100)
+                                                                                                } else {
+                                                                                                    $(".html11").html(html11.substring(0, n))
+                                                                                                }
+                                                                                            }, 100)
+                                                                                        } else {
+                                                                                            $(".html10").html(html10.substring(0, n))
+                                                                                        }
+                                                                                    }, 100)
+                                                                                } else {
+                                                                                    $(".html9").html(html9.substring(0, n))
+                                                                                }
+                                                                            }, 100)
+                                                                        } else {
+                                                                            $(".html8").html(html8.substring(0, n))
+                                                                        }
+                                                                    }, 100)
+                                                                } else {
+                                                                    $(".html7").html(html7.substring(0, n))
+                                                                }
+                                                            }, 100)
+                                                        } else {
+                                                            $(".html6").html(html6.substring(0, n))
+                                                        }
+                                                    }, 100)
+                                                } else {
+                                                    $(".html5").html(html5.substring(0, n))
+                                                }
+                                            }, 100)
+                                        } else {
+                                            $(".html4").html(html4.substring(0, n))
+                                        }
+                                    }, 100)
+                                } else {
+                                    $(".html3").html(html3.substring(0, n))
+                                }
+                            }, 100)
+                        } else {
+                            $(".html2").html(html2.substring(0, n))
+                        }
+                    }, 100)
+                } else {
+                    $(".html1").html(html1.substring(0, n))
+                }
+            }, 100)
+        }
+
+        function show() {
+            console.log(1)
+        }
+    };
+</script>
+
+</html>
